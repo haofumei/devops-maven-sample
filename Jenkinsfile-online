@@ -17,6 +17,7 @@ pipeline {
         DOCKERHUB_NAMESPACE = 'haofumei'
         GITHUB_ACCOUNT = 'haofumei'
         APP_NAME = 'devops-maven-sample'
+        SONAR_CREDENTIAL_ID = 'sonar-token'
     }
 
     stages {
