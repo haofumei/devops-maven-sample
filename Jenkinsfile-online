@@ -40,7 +40,7 @@ pipeline {
                 container ('maven') {
                     withCredentials([string(credentialsId: "$SONAR_CREDENTIAL_ID", variable: 'SONAR_TOKEN')]) {
                       withSonarQubeEnv('sonar') {
-                        sh 'mvn sonar:sonar -Dsonar.projectKey=mall34 -Dsonar.host.url=http://34.132.20.128:9000 -Dsonar.login=689c0fa4bf9568cf20f354a7172bf2d6219cf968'
+                        sh 'mvn sonar:sonar -Dsonar.projectKey=mall34 -Dsonar.host.url=http://34.68.219.18:9000 -Dsonar.login=1830bf7ffcd85a775887866615e90966651677c9'
                       }
                     }
                     timeout(time: 1, unit: 'HOURS') {
